@@ -30,3 +30,13 @@ $("#add-pet").on("click", function () {
 	$("#posted-pets").append($newPet);
 
 });
+
+// Puppy images fade in
+
+$("img").css("display", "none").fadeIn(1600);
+
+// Select and unselect cards
+
+$(".card").on("click", function () {
+	$(this).toggleClass("selected");
+});
