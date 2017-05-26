@@ -1,5 +1,5 @@
 $('.loc').hover(
-  function(){
+  function() {
     $(this).html("<strong>Location:</strong> Your house?!");
   },
   function() {
@@ -8,7 +8,7 @@ $('.loc').hover(
 
 // Adds a pet to the page with user input
 
-$("#add-pet").on("click", function () {
+$("#add-pet").on("click", function() {
 	// Grab info from the form
 
 	var $name = $("#pet-name");
@@ -30,6 +30,12 @@ $("#add-pet").on("click", function () {
 	$("#posted-pets").append($newPet);
 
 });
+
+//Reset Form Fields
+
+$name.val("");
+$species.val("Dog");  
+$notes.val("");
 
 // Puppy images fade in
 
