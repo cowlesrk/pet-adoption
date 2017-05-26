@@ -31,6 +31,12 @@ $("#add-pet").on("click", function() {
 
 });
 
+//Make the 'x' in the corner remove the section it's contained within
+
+$(".close").on("click", function() {
+	$(this).parent().remove();
+});
+
 //Reset Form Fields
 
 $name.val("");
